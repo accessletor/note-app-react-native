@@ -49,7 +49,8 @@ const NoteCard = ({ item, setCurrentPage }) => (
         renderItem={({ item }) => (
           <NoteCard item={item} setCurrentPage={setCurrentPage} />
         )}
-        keyExtractor={(item) => item.id}
+        // keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.id.toString()}
       />
     </View>
   )
